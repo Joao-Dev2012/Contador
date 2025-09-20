@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador - ELITI</title>
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+        }        
+        body{
+            min-height: 100vh;
+            border : 10px solid whitesmoke;
+            background-color: gray;
+            display: grid;
+            place-items: center;
+            color: black;
+            font-family: comic sans ms;
+        button{
+            border-radius: 90px;
+            font-size: 35px;
+            font-family: comic sans ms;
+                }
+                }
+        section{
+            border-radius: 10px;
+            text-align: center;
+            background: rgba(255,255,255,0.5);
+            padding: 20px;
+            height: 400px;
+        }
+        p{
+            font-size: 220px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    
+    <section>
+        <h2>comic sans talvez de propósito hehe^^</h2>
+        <h1>CONTADOR - ELITI</h1>
+        <button onclick = "diminuir()">Menos-</button>
+        <button onclick = "aumentar()">Mais+</button>
+        <p>0</p>
+    </section>
+    <script>
+        // estado:
+        let contador = 0;
+        // alteradores:
+        function aumentar(){
+            contador = contador + 1
+            mostrar()
+        }
+        function diminuir(){
+            contador = contador - 1
+            mostrar()
+        }
+        // renderizador:
+        function mostrar(){
+            const p = documento.querySelector("p")
+            p.innerText = contador
+
+        }
+        // inicar
+        mostrar()
+    </script>
 </body>
+
 </html>
