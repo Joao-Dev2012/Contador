@@ -40,8 +40,8 @@
     <section>
         <h2>comic sans talvez de propósito hehe^^</h2>
         <h1>CONTADOR - ELITI</h1>
-        <button onclick = "diminuir()">Menos-</button>
-        <button onclick = "aumentar()">Mais+</button>
+        <button onclick="diminuir()">Menos-</button>
+        <button onclick="aumentar()">Mais+</button>
         <p>0</p>
     </section>
     <script>
@@ -49,18 +49,17 @@
         let contador = 0;
         // alteradores:
         function aumentar(){
-            contador = contador + 1
+            contador++
             mostrar()
         }
         function diminuir(){
-            contador = contador - 1
+            contador--
             mostrar()
         }
         // renderizador:
         function mostrar(){
-            const p = documento.querySelector("p")
+            const p = document.querySelector("p")
             p.innerText = contador
-
         }
         // inicar
         mostrar()
