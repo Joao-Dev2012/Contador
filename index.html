@@ -60,10 +60,17 @@
 </body>
     <script>
         let valor = 0
+        let number = 5
+
+
 
         function aumentar(){
-            valor++
-            render()
+        if(number === "5"){
+            console.log('igual')
+        }
+        else{
+            console.log('diferente')
+        }
         }
         function diminuir(){
             valor--
@@ -74,6 +81,8 @@
             p.innerText = valor
         }
         render()
+
+
 
     </script>
 </body>
